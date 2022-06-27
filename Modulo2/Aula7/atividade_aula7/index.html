@@ -25,16 +25,21 @@
 
     .container {
         display: flex;
-        width: 90vw;
+        width: 100vw;
+        border: 2px solid red;
     }
 
     .imagem {
         height: 80vh;
         border-radius: 50px;
-        flex: .5;
+        flex: none;
         text-shadow: 2px 2px 4px #000;
         cursor: pointer;
         margin: 10px;
+        border: 2px solid yellow;
+        display: flex;
+        width: 100%;
+
     }
     
     .imagem figcaption {
@@ -48,63 +53,63 @@
     
     <div class="container">
         <figure class="imagem">
-            <img src="assets/img/01-320w.jpg" srcset="assets/img/01-320w.jpg 320w, assets/img/01-480w.jpg 480w, assets/img/01-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="girasol" title="girasol">
+            <img src="assets/img/01-320w.jpg" srcset="assets/img/01-320w.jpg 320w, assets/img/01-480w.jpg 480w, assets/img/01-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="girasol" title="girasol" loading="lazy">
             <figcaption>Imagem girasol</figcaption>
         </figure>
         <figure class="imagem">
-            <img src="assets/img/02-320w.jpg" srcset="assets/img/02-320w.jpg 320w, assets/img/02-480w.jpg 480w, assets/img/02-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="arara" title="arara">
+            <img src="assets/img/02-320w.jpg" srcset="assets/img/02-320w.jpg 320w, assets/img/02-480w.jpg 480w, assets/img/02-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="arara" title="arara" loading="lazy">
             <figcaption>Imagem arara</figcaption>
         </figure>
         <figure class="imagem">
-            <img src="assets/img/03-320w.jpg" srcset="assets/img/03-320w.jpg 320w, assets/img/03-480w.jpg 480w, assets/img/03-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="paisagem" title="paisagem">
+            <img src="assets/img/03-320w.jpg" srcset="assets/img/03-320w.jpg 320w, assets/img/03-480w.jpg 480w, assets/img/03-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="paisagem" title="paisagem" loading="lazy">
             <figcaption>Imagem paisagem</figcaption>
         </figure>
         <figure class="imagem">
-            <img src="assets/img/04-320w.jpg" srcset="assets/img/04-320w.jpg 320w, assets/img/04-480w.jpg 480w, assets/img/04-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="cais" title="cais">
+            <img src="assets/img/04-320w.jpg" srcset="assets/img/04-320w.jpg 320w, assets/img/04-480w.jpg 480w, assets/img/04-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="cais" title="cais" loading="lazy">
             <figcaption>Imagem cais</figcaption>
         </figure>
         <figure class="imagem">
-            <img src="assets/img/05-320w.jpg" srcset="assets/img/05-320w.jpg 320w, assets/img/05-480w.jpg 480w, assets/img/05-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="bolinha" title="bolinha">
+            <img src="assets/img/05-320w.jpg" srcset="assets/img/05-320w.jpg 320w, assets/img/05-480w.jpg 480w, assets/img/05-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="bolinha" title="bolinha" loading="lazy">
             <figcaption>Imagem bolinha</figcaption>
         </figure>
         <figure class="imagem">
-            <img src="assets/img/06-320w.jpg" srcset="assets/img/06-320w.jpg 320w, assets/img/06-480w.jpg 480w, assets/img/06-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="filtro dos sonhos" title="filtro dos sonhos">
+            <img src="assets/img/06-320w.jpg" srcset="assets/img/06-320w.jpg 320w, assets/img/06-480w.jpg 480w, assets/img/06-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="filtro dos sonhos" title="filtro dos sonhos" loading="lazy">
             <figcaption>Imagem filtro dos sonhos</figcaption>
         </figure>
         <figure class="imagem">
-            <img src="assets/img/07-320w.jpg" srcset="assets/img/07-320w.jpg 320w, assets/img/07-480w.jpg 480w, assets/img/07-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="triangulo neon" title="triangulo neon">
+            <img src="assets/img/07-320w.jpg" srcset="assets/img/07-320w.jpg 320w, assets/img/07-480w.jpg 480w, assets/img/07-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="triangulo neon" title="triangulo neon" loading="lazy">
             <figcaption>Imagem triangulo neon</figcaption>
         </figure>
         <figure class="imagem">
-            <img src="assets/img/08-320w.jpg" srcset="assets/img/08-320w.jpg 320w, assets/img/08-480w.jpg 480w, assets/img/08-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="rainbow girl" title="rainbow girl">
+            <img src="assets/img/08-320w.jpg" srcset="assets/img/08-320w.jpg 320w, assets/img/08-480w.jpg 480w, assets/img/08-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="rainbow girl" title="rainbow girl" loading="lazy">
             <figcaption>Imagem rainbow girl</figcaption>
         </figure>
         <figure class="imagem">
-            <img src="assets/img/09-320w.jpg" srcset="assets/img/09-320w.jpg 320w, assets/img/09-480w.jpg 480w, assets/img/09-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="centauro arvore" title="centauro arvore">
+            <img src="assets/img/09-320w.jpg" srcset="assets/img/09-320w.jpg 320w, assets/img/09-480w.jpg 480w, assets/img/09-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="centauro arvore" title="centauro arvore" loading="lazy">
             <figcaption>Imagem centauro arvore</figcaption>
         </figure>
         <figure class="imagem">
-            <img src="assets/img/10-320w.jpg" srcset="assets/img/10-320w.jpg 320w, assets/img/10-480w.jpg 480w, assets/img/10-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="coração" title="coração">
+            <img src="assets/img/10-320w.jpg" srcset="assets/img/10-320w.jpg 320w, assets/img/10-480w.jpg 480w, assets/img/10-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="coração" title="coração" loading="lazy">
             <figcaption>Imagem coração</figcaption>
         </figure>
         <figure class="imagem">
-            <img src="assets/img/11-320w.jpg" srcset="assets/img/11-320w.jpg 320w, assets/img/11-480w.jpg 480w, assets/img/11-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="yoga" title="yoga">
+            <img src="assets/img/11-320w.jpg" srcset="assets/img/11-320w.jpg 320w, assets/img/11-480w.jpg 480w, assets/img/11-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="yoga" title="yoga" loading="lazy">
             <figcaption>Imagem yoga</figcaption>
         </figure>
         <figure class="imagem">
-            <img src="assets/img/12-320w.jpg" srcset="assets/img/12-320w.jpg 320w, assets/img/12-480w.jpg 480w, assets/img/12-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="lampada na chuva" title="lampada na chuva">
+            <img src="assets/img/12-320w.jpg" srcset="assets/img/12-320w.jpg 320w, assets/img/12-480w.jpg 480w, assets/img/12-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="lampada na chuva" title="lampada na chuva" loading="lazy">
             <figcaption>Imagem lampada na chuva</figcaption>
         </figure>
         <figure class="imagem">
-            <img src="assets/img/13-320w.jpg" srcset="assets/img/13-320w.jpg 320w, assets/img/13-480w.jpg 480w, assets/img/13-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="livro do amor" title="livro do amor">
+            <img src="assets/img/13-320w.jpg" srcset="assets/img/13-320w.jpg 320w, assets/img/13-480w.jpg 480w, assets/img/13-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="livro do amor" title="livro do amor" loading="lazy">
             <figcaption>Imagem livro do amor</figcaption>
         </figure>
         <figure class="imagem">
-            <img src="assets/img/14-320w.jpg" srcset="assets/img/14-320w.jpg 320w, assets/img/14-480w.jpg 480w, assets/img/14-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="patriota" title="patriota">
+            <img src="assets/img/14-320w.jpg" srcset="assets/img/14-320w.jpg 320w, assets/img/14-480w.jpg 480w, assets/img/14-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="patriota" title="patriota" loading="lazy">
             <figcaption>Imagem patriota</figcaption>
         </figure>
         <figure class="imagem">
-            <img src="assets/img/15-320w.jpg" srcset="assets/img/15-320w.jpg 320w, assets/img/15-480w.jpg 480w, assets/img/15-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="lobo neon" title="lobo neon">
+            <img src="assets/img/15-320w.jpg" srcset="assets/img/15-320w.jpg 320w, assets/img/15-480w.jpg 480w, assets/img/15-800w.jpg 800w" sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" alt="lobo neon" title="lobo neon" loading="lazy">
             <figcaption>Imagem lobo neon</figcaption>
         </figure>
     </div>

@@ -8,4 +8,4 @@ console.log("Digite o valor em Fahrenheit: ")
 let fahrenheit = prompt ()
 let fahrenheitParaCelcius = (fahrenheit - 32) / 9 * 5
 
-console.log(fahrenheitParaCelcius)
+console.log(fahrenheit+ " Fahrenheit é igual a "+fahrenheitParaCelcius.toFixed(1)+" Celcius")
