@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    
+    <h1>Cadastrar Usuário</h1>
+
+        <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+            <div>
+                <label for="nome">Seu nome</label>
+                 <br>
+                <input type="text" placeholder="Seu Nome" id="nome" name="nomeCompleto">
+            </div>
+            <br>
+            <br>
+            
+            <div>
+                <label for="email">Seu melhor E-mail</label>
+                <br>
+                <input type="email" placeholder="E-Mail" id="email" name="email">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="pwd">Sua senha</label>
+                <br>
+                <input type="password" placeholder="Seu senha" id="pwd" name="senha">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="data">Data de nascimento</label>
+                <br>
+                <input type="date" id="data" name="data">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="cpf">Seu CPF</label>
+                <br>
+                <input type="text" placeholder="CPF" maxlength="14" id="cpf" name="cpf">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="idade">Idade</label>
+                <br>
+                <input type="number" placeholder="Idade" min="0" max="125" id="idade" name="idade">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="foto">Foto de perfil</label>
+                <br>
+                <input type="file" multiple id="foto" name="foto">
+            </div>
+
+            <br>
+
+            <div>
+                <label for="cor">Cor do perfil</label>
+                <br>
+                <input type="color" id="cor" name="cor">
+            </div>
+
+            <br>
+
+            <fieldset>
+                <legend>Quais seus pets</legend>
+                <input type="checkbox" placeholder="Teste" id="cachorro" name="cachoro">
+                <label for="cachorro">Cachorro</label>
+
+                <br>
+
+                <input type="checkbox" placeholder="Teste" id="gato" name="gato">
+                <label for="gato">Gato</label>
+
+                <br>
+
+                <input type="checkbox" placeholder="Teste" id="tartaruga" name="tartaruga">
+                <label for="tartaruga">Tartaruga</label>
+
+                <br>
+
+                <input type="checkbox" placeholder="Teste" id="papagaio" name="papagaio">
+                <label for="papagaio">Papagaio</label>
+            </fieldset>
+            <br>
+            <br>
+
+            <fieldset>
+                <legend>Você é maior de idade</legend>
+                <input name="maiorDeIdade" type="radio" value="sim" id="sim">
+                <label for="sim">Sim</label>
+                <br>
+                <input name="maiorDeIdade" type="radio" value="nao" id="nao">
+                <label for="nao">Não</label>
+                <br>
+                <!-- <input name="maior" type="radio">Talvez -->
+            </fieldset>
+            
+            <br>
+            <br>
+
+            <div>
+                <label for="bens">Seus bens</label>
+                <br>
+                <select id="bens" name="bens">
+                    <option value="">Carro</option>
+                    <option value="">Moto</option>
+                    <option value="">Bicicleta</option>
+                </select>
+            </div>
+
+            <br>
+            <br>
+
+            <div>
+                <label for="mensagem">Sua mensagem para mim</label>
+                <br>
+                <textarea cols="30" rows="10" placeholder="sua mensagem" id="mensagem" name="texto"></textarea>
+            </div>
+                
+            <br>
+            <br>
+
+            <input type="submit" value="Salvar Usuário">
+        
+        </form>
+
+
+</body>
+</html>
+
+<!-- type = tipo de input; value, pega o valor do que ta escrito; placeholder mostra uma dica/direção do que deve ser escrito 
+
+a tag label pemite escrever ao lado do input; o atributo for me pertmite clickar no escrito dentro da label e selecionar o input
+posso fazer tanto agrupando as coisas dentro da tag label, ou colocando o atriboto for para relacionar ao id de algum input
+
+A tag fildset engolba os elementos dentro visualmente e posso legendalado usando o atributo legend
+
+
+
+
+-->

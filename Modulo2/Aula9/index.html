@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 9, tabelas</title>
+</head>
+<body>
+    
+    <table border="1">
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col bgcolor="yellow">
+        </colgroup>
+        <tbody>
+            <tr bgcolor="gray" height="48px">
+                <th width="400px" colspan="2">Usuário</th>
+                <th width="48px">Idade</th>
+                <th width="300px" bgcolor="yellow">Profissão</th>
+            </tr>
+            <tr height="48px">
+                <td><img src="assets/img/Pessoa aleatoria.jpg" width="48px"></td>
+                <td>Gabriel Silva Rosa</td>
+                <td rowspan="2">18</td>
+                <td>UX Designer</td>
+            </tr>
+            <tr height="48px">
+                <td></td>
+                <td>Fulano de Tal</td>
+                <!-- <td>42</td> -->
+                <td>Motorista</td>
+            </tr>    
+        </tbody>
+    </table>
+
+</body>
+</html>
+
+<!-- 
+    A tag <table> permite a criação de tabelas; a tag <tbody> representa o bloco de varias linhas nesta tabela; a tag <tr> é uma linha dessa tabela; a tag <td> é o elemento dentro dessa celula, nesta linha (dado que está na tabela); a tag <th> é uma célula header(igual a tag h1, possui valor semantico)
+    O atributo border na tag <table>, define o tamanho da linha ao redor das células
+        o atributo width dentro da tag table me permite colocar o tamanho da tabela
+    O atributo bgcolor me permite colorir a célula
+    é possivel colocar imagens dentro das células
+    O atributo colspan permite mesclar celulas na horizontal
+    O atributo rowspan permite mesclar celulas na vertical (coluna) dividinto o mesmo conteudo
+
+
+
+    não preciso colocar o tbody, posso colocar o table dps tr e dps td ou th direto.
+
+    
+
+
+
+
+
+
+
+ -->
