@@ -1,0 +1,166 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade aula 11</title>
+</head>
+<body>
+    
+    <h1>Aliste-se</h1>
+    <br>
+
+    <form action="https://bemach1.com.br/html-aula-forms/cadastroRecruta.php" method="post" target="_blank" enctype="multipart/form-data">
+        <section>
+            <div>
+                <label for="email">Seu e-mail</label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="email@mail.com">
+            </div>
+            <br>
+        
+            <div>
+                <label for="senha">Senha</label>
+                <br>
+                <input type="password" name="senha" id="senha" placeholder="Crie uma senha">
+            </div>
+            <br>
+        
+            <div>
+                <label for="nomeCompleto">Nome Completo</label>
+                <br>
+                <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Informe seu nome">
+            </div>
+            <br>
+        
+            <div>
+                <label for="cpf">CPF (Apenas números)</label>
+                <br>
+                <input type="number" name="cpf" id="cpf" placeholder="00000000000" maxlength="11">
+            </div>
+            <br>
+        
+            <div>
+                <label for="rg">RG (Apenas números)</label>
+                <br>
+                <input type="number" name="rg" id="rg" placeholder="00000000000" maxlength="12">
+            </div>
+            <br>
+        
+            <div>
+                <label for="nascimento">Data de nascimento</label>
+                <br>
+                <input type="date" name="nascimento" id="nascimento" placeholder="">
+            </div>
+            <br>
+            <div>
+                <fieldset >
+                    <legend>Necessidades especiais</legend>
+                    <input type="radio" name="necessidadesEspeciais" value="sim" id="sim">
+                    <label for="sim">SIM</label>
+                    <br>
+                    <input type="radio" name="necessidadesEspeciais" value="nao" id="nao">
+                    <label for="nao">NÃO</label>
+                </fieldset>
+            </div>
+            <br>
+            <div>
+                <label for="estado">Estado de residência</label>
+                <br>
+                <select name="" id="estado">
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="DF">DF</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <fieldset>
+                    <legend>Especialização desejada</legend>
+                    <input type="checkbox" name="especializacao1" value="especializacao1" id="especializacao1">
+                    <label for="especializacao1">Mecânica de aeronaves (Back-end)</label>
+                    <br>
+                    <br>
+                    <input type="checkbox" name="especializacao2" value="especializacao2" id="especializacao2">
+                    <label for="especializacao2">Montagem de aeronaves (Front-end)</label>
+                    <br>
+                    <br>
+                    <input type="checkbox" name="especializacao3" value="especializacao3" id="especializacao3">
+                    <label for="especializacao3">Engenheiro de aeronaves (FullStack)</label>
+                    <br>
+                    <br>
+                    <input type="checkbox" name="especializacao4" value="especializacao4" id="especializacao4">
+                    <label for="especializacao4">Piloto (Tester)</label>
+                    <br>
+                    <br>
+                    <input type="checkbox" name="especializacao5" value="especializacao5" id="especializacao5">
+                    <label for="especializacao5">Operador de trafego aéreo (Scrum Master)</label>
+                    <br>
+                    <br>
+                </fieldset>
+            </div>
+            <br>
+            <div>
+                <label for="foto">Adicione sua foto</label>
+                <input type="file"  name="foto" id="foto">
+            </div>
+            <br>
+            <div>
+                <input type="submit">
+            </div>
+            
+        </section>
+    </form>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
