@@ -1,0 +1,62 @@
+/* Toda div que estiver dentro de outra div em qualquer hierarquia */
+/* Seletor espaço informa que estamos acessando o elemento */
+/* div div {
+    background-color: aquamarine;
+} */
+
+
+/* Article > div > p */
+/* article div p {
+    background-color: blueviolet;
+} */
+
+
+/* Todo "p" que for filho direto de uma "div" */
+/* div > p {
+    background-color: blueviolet;
+} */
+
+
+/* para todo p que é irmão DIRETO de um h1, vai receber o css ... (Tem que ser o primeiro p colado direto em uma div) */
+/* Primeiro elemento p que está após o h1 */
+/* h1 + p {
+    background-color: blueviolet;
+} */
+
+
+/* Para todo e qualquer p que está depois de um h1 (irmãos) */
+/* h1 ~ p {
+    background-color: blueviolet;
+} */
+
+
+/* CSS Inline = 1000 */
+
+/* 100 */
+/* #id_parag {
+    background-color: chartreuse;
+} */
+
+/* 10 */
+/* .paragrafo {
+    background-color: red;
+} */
+
+/* 1 */
+p {
+    background-color: blueviolet;
+}
+
+div div p {
+    background-color: brown;
+}
+
+
+
+/* 
+Posso concatenar div utilizando a semantica "div div" (isso quer dizer que ele vai apenas aplicar o css em uma div dentro de uma div
+
+Quando eu colocar o sinal maior que ">" estou falando exclusivamente de um elemento que é filho direto de outro elemento
+
+o atributo !important aumenta o valor para o valor máximo
+*/
