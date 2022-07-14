@@ -1,0 +1,73 @@
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+/* Não mexer acima */
+
+
+/* Quer dizer que todos os ELEMENTOS dentro da tag article, terão o fundo amarelo
+é diferente de utilizar apenas o article sozinho, pois caso ele esteja sozinho, toda a caixa ficaria amarela, e não apenas os elementos */
+/* article * {
+    background-color: yellow;
+}
+
+p {
+    background-color: blue;
+} */
+
+
+/* Lista de elementos que quero estilizar (devo utilizazr virgula; funciona com classes, ids, etc) */
+/* h1, h2, small, h3, .parag {
+    background-color: green;
+    border: solid black
+}
+
+section article p {
+    color: black;
+} */
+
+
+/* Quando clickar e segurar a estilização será aplicada */
+a:active {
+    background-color: red;
+}
+
+/* Quando passar o mouse em cima a estilização será aplicada */
+a:hover {
+    background-color: blueviolet;
+}
+
+/* Caso eu ja tenha clcikado antes a estilização será aplicada */
+a:visited {
+    color: red;
+}
+
+h1:hover {
+    background-color: blue;
+    cursor: wait;
+}
+
+input:focus-visible {
+    outline: crimson solid;
+}
+
+li::marker {
+    color: chartreuse;
+}
+
+.autor::after{
+    content: "8986";
+}
+
+
+/* asterisco é o seletor universal "*" com peso 0 
+
+   ":" = pseudoclasse ; "::"= pseudoelemento*/
