@@ -1,0 +1,40 @@
+div {
+    height: 300px;
+    width: 300px;
+    background-color: blueviolet;
+    padding: 16px;
+    /* padding-top: 16px;
+    padding-left: 8px;
+    padding-right: 2px;
+    padding-bottom: 32px; */
+    /* border: solid red 3px; */
+    /* border-top: solid red 5px; */
+    /* border-bottom: greenyellow 15px dotted; */
+    border-radius: 10px;
+
+    margin: 24px 8px;
+}
+
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+
+/* 
+
+padding (magin so que de dentro) é o distanciamento de um elemento em relação a caixa que ele está inserido
+
+border é a borda da caixa de um elemento
+
+margin é a parte que cobre tudo por fora
+
+padding, bordem e margin, possuem 4 lados, ou seja top, bottom, left e right
+
+ao inves de ficar escrevendo padding-top, padding-bottom e etc, posso escrever um padding só e colocar o distanciamento dando espaços entre eles, sua leitura é feita no sentido horário, ou seja (cima, direita, baixo, esquerda)
+se for escrito com dois valores ao inves de 4, ele informará o top e bottom, e esquerda e direita
+se for com 3 valores, o primeiro valor e o top, o segundo é a esquerda e direita, e o terceiro valor é o bottom
+o recomendado é utilizar os 4 valores ou apenas 2
+
+
+*/

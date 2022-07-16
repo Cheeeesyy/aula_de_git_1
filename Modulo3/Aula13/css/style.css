@@ -36,17 +36,17 @@ section article p {
 
 
 /* Quando clickar e segurar a estilização será aplicada */
-a:active {
+/* a:active {
     background-color: red;
-}
+} */
 
 /* Quando passar o mouse em cima a estilização será aplicada */
-a:hover {
+/* a:hover {
     background-color: blueviolet;
-}
+} */
 
 /* Caso eu ja tenha clcikado antes a estilização será aplicada */
-a:visited {
+/* a:visited {
     color: red;
 }
 
@@ -64,10 +64,44 @@ li::marker {
 }
 
 .autor::after{
-    content: "8986";
+    content: "\1F600";
+}
+
+[href*="pg1" i] {
+    background-color: red;
+} */
+
+li:nth-child(odd) {
+    color: red;
 }
 
 
 /* asterisco é o seletor universal "*" com peso 0 
 
-   ":" = pseudoclasse ; "::"= pseudoelemento*/
+   ":" = pseudoclasse ; "::"= pseudoelemento
+
+   Utilizando [] posso selecionar dentro atribitos e estiliza-los
+
+   "i"= independente de como o texto está escrito (captalizado) ele vai ler a informação e estiliza-la
+
+   "$"= todos que terminam em (o que estiver escrito dentro) vai ser estilizado
+
+   "^"= todos que iniciarem em (o que estiver escrito dedntro) vai ser estilizado
+
+   "*"= quem estiver com (o que estiver escrito dentro) em qualquer parte, seja no inicio ou no fim, ele vai achar e estiliza-lo [precisa ser escrito colado com o atributo]
+
+    li:nth-child(odd) {
+        color: red;
+    }
+    
+    => Isso quer dizer que so filhos impares do elemento li receberao a estilização (posso trocar o ood por even e por numeros, também posso trocar por 3n que significa que a cada dois elementos o 3 receberá a estilização)
+   
+   
+   
+   
+   
+   
+   
+   
+   
+*/

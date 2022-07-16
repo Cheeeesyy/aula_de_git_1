@@ -11,34 +11,37 @@
  * Parcelas: +12 x de R$ 9.553, 33
  * 
  */
+let continuar = true
 
 const prompt = require('prompt-sync')();
 
 console.log("Seja bem vindo(a) ao nosso programa de revenda de veiculos! \n")
 
-console.log("Qual o preço do seu veículo?")
-let precoVeiculo = Number(prompt())
+while (continuar) {
+    console.log("Qual o preço do seu veículo?")
+    let precoVeiculo = Number(prompt())
 
-if(isNaN(precoVeiculo)){
-    console.log("Por favor, coloque o valor do seu veículo!")
-    return
+    if (isNaN(precoVeiculo)) {
+        console.log("Por favor, coloque o valor do seu veículo!")
+    } else {
+        console.log("Qual o modelo do veículo?")
+        let modeloVeiculo = prompt()
+
+        let entradaVeiculo = (precoVeiculo / 2)
+
+        // let parcelas = (entradaVeiculo /12) * jurosAnual
+
+        console.log("Quantas parcelas?")
+        let numeroParcelas = Number(prompt())
+
+        let jurosMensal = numeroParcelas * 0.0122
+
+        let parcelas = (entradaVeiculo / numeroParcelas) * jurosMensal
+
+        console.log("Valor do carro: " + precoVeiculo)
+        console.log("Modelo do carro: " + modeloVeiculo)
+        console.log("Entrada: " + entradaVeiculo)
+        console.log("Parcelas: " + parcelas.toFixed(2))
+        continuar = false
+    }
 }
-
-console.log("Qual o modelo do veículo?")
-let modeloVeiculo = prompt()
-
-let entradaVeiculo = (precoVeiculo /2)
-
-// let parcelas = (entradaVeiculo /12) * jurosAnual
-
-console.log("Quantas parcelas?")
-let numeroParcelas = Number(prompt())
-
-let jurosMensal =  numeroParcelas * 0.0122
-
-let parcelas = (entradaVeiculo /numeroParcelas) * jurosMensal
-
-console.log("Valor do carro: " + precoVeiculo)
-console.log("Modelo do carro: " + modeloVeiculo)
-console.log("Entrada: " + entradaVeiculo)
-console.log("Parcelas: " + parcelas.toFixed(2))
