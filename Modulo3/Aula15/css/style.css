@@ -1,0 +1,169 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.pai {
+    width: 400px;
+    height: 400px;
+    border: solid black 4px;
+    margin: auto;
+    position: relative;
+}
+
+.filha_a, .filha_b {
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+
+/* p {
+    float: right;
+} */
+
+.filha_a {
+    background-color: blueviolet;
+    /* display: none; */
+    visibility: hidden;
+    /* float: left; */
+}
+
+.filha_b {
+    background-color: brown;
+    /* float: right; */
+}
+
+.filha_c {
+    height: 100px;
+    width: 42px;
+    background-color: blue;
+    float: right;
+}
+
+/* .filha_a {
+    background-color: blueviolet;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    width: 100px;
+}
+
+.filha_b {
+    height: 100px;
+    left: 0;
+    right: 0;
+    background-color: brown;
+} */
+
+li {
+    display: inline;
+    padding: 16px;
+}
+
+nav {
+    background-color: bisque;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.subir {
+    width: 40px;
+    height: 40px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    position: fixed;
+    right: 32;
+    bottom: 32px;
+}
+
+.tabela {
+    width: 400px;
+    height: 400px;
+    border: solid black 3px;
+    display: table;   
+}
+
+.t_row {
+    display: table-row;
+}
+
+.tabela .t_row p {
+    display: table-cell;
+    border: solid 1px black;
+}
+
+._grid {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: max-content 300px;
+}
+
+.g_row {
+    border: 3px solid black;
+}
+
+.g_semi_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.g_span {
+    grid-column: span 2;
+}
+
+._flex {
+    width: 400px;
+    height: 400px;
+    border: solid 3px black;
+    display: flex;
+    gap: 16px 32px;
+}
+
+.f_row {
+    border: solid 1px black;
+}
+
+/* p, span {
+    border: solid 3px black;
+    width: 300px;
+    height: 42px;
+}
+
+p, div, span {
+    display: inline-block;
+} */
+
+
+/* 
+Position: relative; faz com que todos os elementos que possuírem position: absolute; fiquem referenciados a ele.
+
+position: fixed; fixa ele na tela
+
+position: sticky; ele acompanha a página (colando na página) de acordo com os parâmetros de top left right ou qualquer coisa do tipo que forem atribuídas
+
+float: ; move o elemento para uma direção com base na ordem que ele vem do html
+
+display: none; tira o elemento da tela, tanto o espaço como visibilidade.
+
+display: inline; n aceita parametros de width e height, permite que tenham coisas ao seu lado
+
+display: inline-block; é o melhor dos dois mundos, deixa o elemento inline e aceita parametros de altura e largura
+
+display: table; display: table-row; e display: table-cell; são os elementos de estilização necessários para recriar uma tabela.
+
+
+
+visibility: hidden; tira o elemento da tela, porem so visualmente (o espaço do elemento continua lá)
+
+
+flex trabalha com linhas gir com colunas
+gap display flex e grid
+nao aplicar "%" em margins gap e padding
+
+https://www.origamid.com/projetos/css-grid-layout-guia-completo/   grid
+
+https://origamid.com/projetos/flexbox-guia-completo/   flex
+*/

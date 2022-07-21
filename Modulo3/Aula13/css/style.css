@@ -89,7 +89,7 @@ li:nth-child(odd) {
    "^"= todos que iniciarem em (o que estiver escrito dedntro) vai ser estilizado
 
    "*"= quem estiver com (o que estiver escrito dentro) em qualquer parte, seja no inicio ou no fim, ele vai achar e estiliza-lo [precisa ser escrito colado com o atributo]
-
+    "~" = seleciona todos menos o primeiro
     li:nth-child(odd) {
         color: red;
     }
