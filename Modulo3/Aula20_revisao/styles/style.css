@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    display: grid;
+    text-align: center;
+}
+
+header {
+    background-color: orange;
+    height: 25vh;
+}
+
+.grid_conteudo {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    height: 50vh;
+}
+
+nav {
+    background-color: green;
+}
+
+main {
+    background-color: yellow;
+}
+
+aside {
+    background-color: blue;
+}
+
+footer {
+    background-color: red;
+    height: 25vh;
+}

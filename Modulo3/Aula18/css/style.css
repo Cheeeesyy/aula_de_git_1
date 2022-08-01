@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+:root {
+    --cor-principal: rgb(232, 123, 15);
+    --btn-padding: 12px 24px;
+    --txt-body: #616161;
+}
+
+
+body {
+    font-family: 'Roboto', Arial, serif, sans-serif;
+    margin: 0;
+    color: var(--txt-body); 
+}
+
+.navbar {
+    width: 100vw;
+    height: 64px;
+    /* background-color: rgba(128, 128, 128, 0.5); */
+    background-color: gray;
+    position: sticky;
+    top: 0;
+    opacity: 0.8;
+}
+
+h1 {
+    margin: 0;
+    color: var(--cor-principal);
+}
+
+.primeira {
+    background-color: aquamarine;
+    /* opacity: 0.2; */
+    height: calc(100vh - 64px);
+    width: calc(100vw - 300px);
+}
+
+
+.primario {
+    padding: var(--btn-padding);
+    background-color: var(--cor-principal);
+    color: white;
+    border-radius: 4px;
+    border-width: 0;
+    color: black;
+    transition: calc(2s - 1.5s);
+}
+
+.primario:hover {
+    background-color: black;
+}
+
+
+/* 
+
+opacity é um atributo que coloca transparencia em um elemento. (geralmente utilizado quando não possuímos elemento filho)
+rgba (é um método de oferecer transparência, porem apenas em bgcolor)
+
+:root (é a pseudo classe que representa o html)
+para representar uma variavel, é necessário colocar "--nomaVariavel:estilização" (so podemos criar variável em um elemento pai do que queremos estilizar ou, no proprio :root
+para usar dps a minha variável, eu preciso chamar ela usando var();
+
+font-family muda a font do texto e pode ser puxada pela web ou localmente
+
+para aplicar calculo em alguma coisa é so utilizar calc();
+
+transition: ; = transição
+
+
+
+
+
+*/

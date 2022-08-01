@@ -1,0 +1,7 @@
+:root {
+    --border-color-input: #aaaaaa;
+    --border-color-input-focus: blueviolet;
+    --text-color-input: blueviolet;
+    --placeholder-color-input: #aaaaaa;
+    /* Boa prática de nomenclatura de variáveis */
+}
