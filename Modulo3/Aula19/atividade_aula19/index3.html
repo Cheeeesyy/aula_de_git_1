@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3 aula 19</title>
+
+    <style>
+
+        .cadastro {
+            width: 300px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+
+        input {
+            border: solid black 1px;
+            padding: 10px 20px;
+        }
+
+        input:disabled {
+            background-color: #E0E0E0;
+        }
+
+        input:read-only {
+            color: #A0A0A0;
+            border: solid #A0A0A0 1px;
+            font-weight: bold;
+        }
+
+        input:required {
+            border: solid red 1px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="cadastro">
+        <form>
+            <input type="text" value="TEXTO TEXTE">
+            <input type="text" disabled value="TEXTO TEXTE">
+            <input type="text" readonly value="TEXTO TEXTE">
+            <input type="text" required value="TEXTO TEXTE">
+        </form>
+    </div>
+
+</body>
+</html>
