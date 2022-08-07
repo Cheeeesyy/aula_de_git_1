@@ -1,0 +1,84 @@
+span {
+    background-color: yellow;
+}
+
+@keyframes rotacao {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+
+    30% {
+        transform: rotate(10deg);
+    }
+
+    70% {
+        transform: rotate(-10deg);
+    }
+
+}
+
+
+button:hover {
+    animation: rotacao 2s;
+    animation-iteration-count: infinite;
+}
+
+
+/* .txt_grande, h2 {
+    display: inline;
+} */
+
+body {
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, auto); */
+    /* significa que está repetindo3 vezes o tamanho auto */
+    
+    /* column-count: 3; */
+    column-width: 300px;
+    column-gap: 32px;
+    column-rule: 4px dotted black;
+}
+
+.cabecalho {
+    display: none;
+}
+
+@media print {
+    
+    .cabecalho {
+        background-color: aquamarine;
+        display: block;
+        column-span: all;
+    }
+
+    .txt_principal, .txt_p1 {
+        column-span: all;
+    }
+
+    body {
+        column-count: 2;
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
+
+/*
+
+column-count = divide em colunas o display block
+colum-width = (RESPONSIVO) ao invez de separar em colunas fixas igual o column-count, ele divide em colunas baseando-se no tamnho proposto. 
+column-span = pega um elemento filho divide em um espaço separado que ocupa todas as colunas
+column-gap = distancia entre as colunas
+column-rule = define caracteristicas de uma borda
+
+
+
+
+
+
+*/

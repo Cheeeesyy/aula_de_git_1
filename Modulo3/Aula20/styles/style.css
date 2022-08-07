@@ -59,6 +59,7 @@
     max-content = Ocupa o máximo do conteudo (naquele caso, o tamnho do texto)
 
     transition = tempo de transição feita para animar elementos
+    quando colocado dois valores de tempo um do lado do outro, o primeiro digito é o tempo da animação o segundo digito é sobre o tempo antes da animação começar (Delay)
     cubic-bezier = tempo da animação (colocado dentro do transition) https://cubic-bezier.com/#.17,.67,.83,.67
 
     transform = transforma um objeto em outras formas 

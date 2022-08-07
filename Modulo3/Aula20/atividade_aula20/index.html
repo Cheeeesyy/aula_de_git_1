@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+
+    <style>
+
+        body {
+            background-color: grey;
+        }
+
+        .main_button {
+            width: 65px;
+            height: 35px;
+            background-color: #0f0c33;
+            color: #FFF;
+            padding: 5px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 50vh;
+        }
+
+        .main_button:hover {
+            animation: botao .6s;
+        }
+
+        @keyframes botao {
+            25% {
+                transform: rotate(25deg);
+            }
+
+            50% {
+                transform: rotate(-25deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <button class="main_button">Logar</button>
+    </div>
+</body>
+</html>

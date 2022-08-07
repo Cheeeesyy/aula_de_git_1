@@ -1,0 +1,127 @@
+.linha {
+    border: solid 1px black;
+    /* width: max-content; */
+    padding: 8px;
+}
+
+.flex_pai {
+    display: flex;
+    gap: 8px;
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-flow: row wrap-reverse; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    height: 350px;
+    /* width: 150px; */
+    /* align-items: stretch; */
+    align-items: center;
+    /* align-items: baseline; */
+    /* align-content: stretch; */
+    /* align-content: flex-start; */
+    /* align-content: center; */
+    /* align-content: space-between; */
+
+}
+
+.flex_item {
+    background-color: yellow;
+    /* width: 50px; */
+    height: 50px;
+    flex-grow: 1;
+    /* flex-basis: 50px; */
+}
+
+.item_1 {
+    order: 3;
+}
+
+.item_2 {
+    order: 8;
+}
+
+.item_3 {
+    order: 1;
+}
+
+.item_4 {
+    order: 6;
+}
+
+.item_5 {
+    /* flex-grow: 3;  isso é igual a*/
+    /* flex: 3 0 150px; */
+    /* flex-basis: 150px;
+    flex-shrink: 0; */
+    order: 4;
+}
+
+.item_6 {
+    order: 7;
+    /* align-self: flex-end; */
+}
+
+.item_7 {
+    order: 5;
+}
+
+.item_8 {
+    order: 2;
+}
+
+/* .end { */
+    /* align-self: flex-end; */
+    /* margin-bottom: 32px; */
+/* } */
+
+.flex_pai div:first-child {
+    background-color: red;
+    align-self: flex-start;
+}
+
+
+/* .item_9 { */
+    /* flex-grow: 5;
+    flex-basis: 150px;
+    flex-shrink: 3; */
+    /* flex: 5 0 150px; */
+/* } */
+
+
+/* 
+Flex aplica o contexto de colunas
+gap é o distanciamento entre essas colunas
+flex-direction = direcionamento do display flex
+
+os atributos do flex com o contexto de pai, é diferente dos atributos que devemos utilizar nos filhos
+Quando utilizar o flex-wrap: wrap, n devo utilizar flex-direction no colum-reverse
+
+justify-content = muda a orientação do container pai 
+atributo space-between = espaçamento igual entre os elementos
+atributo space-around = espaçamento em volta do elemento 
+align-itens alinha de acordo com o eixo do container
+
+align-content
+
+flex grow = tamanho do item
+flex basis = tamanho mínimo do item
+flex srink = permanencia do tamanho do item independente do quanto diminua a tela ou faz com que o item diminua x vezes
+flex = todos os atributos acimas na mesma tag
+order = ordem dos elementos (preciso setar os valores em todos os elementos para utilizar essa tag
+
+align self = tipo o aling itens so que pra um elemento específico
+
+pseudo classe last child pega o ultimo filho e aplica o style
+
+
+
+
+
+
+
+*/
