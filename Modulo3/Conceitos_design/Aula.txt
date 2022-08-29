@@ -1,0 +1,27 @@
+    Conceitos de desing
+
+
+Visão do usuário é importante!
+
+Alinhamento:
+    alinhamentos globais
+    alinhamentos de elementos
+    alinhamentos sempre voltados a alguma outra coisa
+
+    *Textos para leitura, normalmente alinhados na esquerda para direita, sem justificar*
+    Utilizar a estratégia de induzir o usuárioa utilizando essa técnica de ter elementos da esquerda pra direita.
+    Nosso corpo gosta de simetria
+
+    Quando um elemento está próximo de outro, a tendência é pensarmos que eles fazem parte da mesma família, ou dividem o mesmo objetivo
+    Coisas comuns devem ficar próximas, e o resto, separado
+
+
+Usuários n gostam de telas bagunçadas
+
+Contraste: 
+    Enfatizar elementos
+    Utilizado para chamar atenção (Auto ou Baixo contraste)
+
+Repetição:
+    Repetir padrões comuns
+

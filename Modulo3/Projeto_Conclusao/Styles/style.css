@@ -1,0 +1,211 @@
+@import url('var.css');
+@import url('grid.css');
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap');
+@import url('aside.css');
+@import url('nav.css');
+@import url('profile.css');
+@import url('feed.css');
+@import url('publication.css');
+@import url('media.css');
+
+/* --------NAV ------ */
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--body-color);
+}
+
+aside{
+    height: auto;
+    margin-right: 6.4rem;
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+}
+
+main{
+    display: flex;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+
+
+h1,h2{
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    color: var(--paragraph);
+}
+
+a{
+    text-decoration: none;
+}
+
+
+input{
+    width: 23.6rem;
+    height: var(--icon-box-height);
+    padding: 1.4rem;
+
+    border-radius: 0.4rem;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+
+button img{
+    align-self: center;
+    margin-left: 0.4rem;
+}
+
+.box_home {
+    position: fixed;
+    top: 54.0rem;
+    right: .4rem;
+    background: var(--box-home-a-color);
+}
+
+.box_home img {
+    width: 1.4rem;
+    margin: 0 auto;
+}
+
+@media screen and (min-width:992px) {
+    nav .content .logo .logo_responsive{
+        display: none !important;
+    }
+}
+ @media  (min-width:578px) and  (max-width:992px){
+    aside{
+        display: none;
+    }
+
+    nav{
+        justify-content: center;
+    }
+
+    nav .logo{
+        margin-right: 21.8rem;
+    }
+
+    nav .content .logo .logo_responsive{
+        display: none !important;
+    }
+    main{
+        padding: 0 1.6rem;
+    }
+
+    main .profile_box{
+        margin: 0;
+    }
+    main .profile_box{
+        width: 34.8rem;
+    }
+
+    .feed{
+        width: 59.2rem;
+    }
+
+    article .publication_text p img{
+        width: 100%;
+    }
+    
+    .publication_input {
+        width: 50.8rem;
+    }
+
+    .box_home {
+        display: none;
+    }
+}
+
+@media screen and (max-width:577px) {
+
+    main .profile_box{
+        display: none !important;
+    }
+
+    main .principal{
+        display: flex;
+        justify-content: center;
+        flex: 2;
+        margin: 0;
+    }
+
+    
+    .feed{
+        justify-content: center;
+        width: 52.8rem;
+        margin-left: 16px;
+    } 
+
+    nav{
+        box-sizing: border-box;
+        padding: 0 3.4rem 0 3.4rem;
+    }
+
+    nav .content{
+       width: max-content;
+    }
+
+
+    nav .center_nav input{
+        width: 21rem;
+    }
+
+    nav .content .logo_img{
+        display: none;
+        width: 5rem;
+    }
+    nav .logo_responsive{
+        width: 4rem;
+    }
+
+    nav .logo{
+        margin-right: 10.1rem;
+        width: 2.7rem;
+        
+    }
+   
+    nav .menus_nav .caixa_icone_buscar{
+        margin-right: .8rem;
+    }
+    nav .nav_bar_container{
+       padding: 0 !important;
+       width: 44.4rem;
+    }
+
+    .menus_nav .painel .box_config{
+        display: none;
+    }
+
+     #publication_main .publication_container{
+        width: 52.8rem;
+    }
+
+    .publication_container{
+        width: 50.8rem;
+        box-sizing: border-box;
+    }
+
+    aside{
+        display: none;
+    }
+    
+    .publication_input {
+        width: 44.4rem;
+    }
+
+    .box_home {
+        display: none;
+    }
+} 
