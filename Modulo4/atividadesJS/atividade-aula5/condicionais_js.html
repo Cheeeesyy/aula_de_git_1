@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+
+    <script>
+
+        {//Exercício
+
+            let inserirAnimal = prompt('Qual animal de estimação necessita de nosso serviço?')
+            inserirAnimal = inserirAnimal.toLowerCase()
+
+            let mensagem = ''
+            let mensagemPadrao = "Oferecemos ração,"
+            let mensagemCachorroGatoCoelho = "banho e tosa"
+            let mensagemCavaloCabraJumento = "e veterinário especializado"
+            let mensagemRato = "e gaiolas especiais"
+            let mensagemPassaro = "e implante de rastreador"
+
+            switch (inserirAnimal) {
+                case "cachorro":
+                    mensagem = `${mensagemPadrao} ${mensagemCachorroGatoCoelho}`;
+                    break;
+                case "gato":
+                    mensagem = `${mensagemPadrao} ${mensagemCachorroGatoCoelho} `;
+                    break;
+                case "coelho":
+                    mensagem = `${mensagemPadrao} ${mensagemCachorroGatoCoelho}`;
+                    break;
+                case "cavalo":
+                    mensagem = `${mensagemPadrao} ${mensagemCavaloCabraJumento} `;
+                    break;
+                case "cabra":
+                    mensagem = `${mensagemPadrao} ${mensagemCavaloCabraJumento} `;
+                    break;
+                case "jumento":
+                    mensagem = `${mensagemPadrao} ${mensagemCavaloCabraJumento} `;
+                    break;
+                case "rato":
+                    mensagem = `${mensagemPadrao} ${mensagemRato} `;
+                    break;
+                case "passaro":
+                    mensagem = `${mensagemPadrao} ${mensagemPassaro} `
+                    break;
+                default:
+                    mensagem = `${"Desculpe, não atendemos"} ${inserirAnimal} `
+            }
+
+            alert(mensagem)
+            console.log(mensagem)
+            
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Atividade</h1>
+</body>
+</html>

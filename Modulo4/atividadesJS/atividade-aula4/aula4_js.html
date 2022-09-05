@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+
+    <script>
+
+        {//Exercício
+            let recebeLetra = prompt('Digite uma letra do alfabeto:');
+            recebeLetra = recebeLetra.toLowerCase();
+
+            if(recebeLetra.length>1){
+                alert("Você deve digitar apenas uma letra.");
+            }else if(!isNaN(recebeLetra)){  
+                alert("Você não deve digitar um número!");
+            }else if(recebeLetra=='a' || recebeLetra=='e' || recebeLetra=='i' 
+            || recebeLetra =='o' || recebeLetra=='u' ){
+                alert('A letra digitada é uma vogal');
+            }else {
+                alert ('A letra digitada é uma consoante');
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Atividade</h1>
+</body>
+</html>
