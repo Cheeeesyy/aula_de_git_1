@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+    
+    <script>
+
+        {//Exercício aula 8
+            let products = ['Sem Cadastro','Leite', 'Ovo', 'Farinha', 'Milho', 'Café'];
+            let reciveProduct = Numberprompt('Digite o Código do Produto que deseja (1 a 5): ');
+        
+            if(products[reciveProduct] === undefined){
+                alert(list[0])
+            } else {
+                alert(`Usuário digitou ${reciveProduct}, "${products[reciveProduct]}"`);
+            }
+
+            let productAdd = prompt('Gostaria de adicionar mais alguma coisa? (s/n)').toLowerCase()
+            if(productAdd == 's') {
+                let reciveAddProduct = prompt('Qual item gostaria de adionar?:');
+                products.push(reciveAddProduct); 
+            } else if(productAdd == 'n') {
+                alert('Tenha um bom dia!');
+            }
+            console.log(products);
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
